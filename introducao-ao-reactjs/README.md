@@ -1,7 +1,7 @@
 # Instalando o webpack
 
-1° Crie um arquivo webpack.config.js
-2°Copie e cole o seguinte código no arquivo criado
+## 1° Crie um arquivo webpack.config.js
+## 2° Copie e cole o seguinte código no arquivo criado
 
         const path = require('path');
 
@@ -12,9 +12,9 @@
             filename: 'bundle.js'
         } 
     };
-3° Execute na pasta o comando npm init para criar um arquivo package.json
+## 3° Execute na pasta o comando npm init para criar um arquivo package.json
 
-4° execute as seguintes instalações
+## 4° execute as seguintes instalações
     - npm i -D webpack webpack-cli
     - Adicionar no package.json -> 
     
@@ -36,7 +36,7 @@
         ] 
     },
 
-    5° Criar um index.html
+## 5° Criar um index.html
     
     <!DOCTYPE html>
     <html lang="en">
@@ -53,7 +53,7 @@
     </body>
     </html> 
 
-    6. Criar um index.js
+## 6. Criar um index.js
 
     import React from 'react';
     import ReactDOM from 'react-dom';
@@ -65,7 +65,7 @@
     <App />,
     document.getElementById('app')
 
-    7. Instalar o preset do babel e o react dom
+## 7. Instalar o preset do babel e o react dom
 
         - npm i react react-dom
         - npm i -D babel-preset-react
@@ -77,7 +77,7 @@
                     "@babel/preset-react"
                 ]
             }
-    8. Criar na src uma pasta chamada app.js
+## 8. Criar na src uma pasta chamada app.js
 
     import React from 'react';
 
@@ -92,7 +92,7 @@
 
     export default App;
 
-    9. Criar pasta index.js
+## 9. Criar pasta index.js
 
     import React from 'react';
     import ReactDOM from 'react-dom';
@@ -123,7 +123,7 @@
     )
     }
 
-    10. Adicionar no arquivo package.json:
+## 10. Adicionar no arquivo package.json:
 
     "scripts":
         "dev":"webpack --mode development"
@@ -141,7 +141,7 @@
         })
     ]
 
-    12. instalar o webpack dev server:
+## 12. instalar o webpack dev server:
             npm i webpack-dev-server
             - adicionar o package.json
             - "start:dev": "webpack-dev-server"
