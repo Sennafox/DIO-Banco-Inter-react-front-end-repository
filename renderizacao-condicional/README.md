@@ -3,13 +3,40 @@
 
     - No app.jsx crie uma constante booleana.
     - Dentro da função App() adicione a constante no formato react:
-        {const && <div> Outra função ou HTML</div>}
+        {const &&/? (<div> Outra função ou HTML</div>) : (<div>condição de else</div>)}
 
         Se:
 
         const = true, irá renderizar o conteudo da div.
         
         const = false. não irá mostrar o conteudo da div.
+
+        && = e, utilizado somente com uma condição
+        ? = ou, utlizado quando tem else
+
+
+    - A renderização pode ser realizada também através da seguinte lógica:
+            
+
+            
+            const generica = true
+
+            const funcaoGenérica = () => {
+            if(!gererica) return null
+
+            return (
+            <div>
+                <h1>Nome do cliente: fulano</h1>
+            </div>
+            )
+
+            return (
+  
+                <div>
+                    {showCostumer()}
+                </div>
+                
+            );
 
 # Instalando o webpack
 
