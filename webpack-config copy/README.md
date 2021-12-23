@@ -1,12 +1,3 @@
-
-# Renderização condicional
-
-    No app.jsx crie uma constante booleana.
-    dentro da função App() adicione a constante no formato react:
-    {const && <div> Outra função ou HTML</div>}
-    const = true, irá renderizar o conteudo da div.
-    const = false. não irá mostrar o conteudo da div.
-
 # Instalando o webpack
 
 ## 1° Crie um arquivo webpack.config.js
