@@ -27,18 +27,23 @@ const listCostumer = [
 
 const App = () => {
 
+  const handlerClick = (e, id) => {
+    console.log('deletar cliente')
+    alert(`ID do cliente: ${id}`)
+  }
+
   const renderCostumer = (costumer, index) => {
     return (
-      <div>
-      <li key={`costumer ${costumer.id}`}>{costumer.name}</li>
+      <div key={`costumer ${costumer.id}`}>
+      <li>{costumer.name} <button onBlur={(e) => handlerClick(e, costumer.id)}>Deletar cliente</button></li>
       {costumer.skills.map(renderSkills)}
       </div>
     )
   }
 
   const renderSkills = (skill, index) => 
-      <div style= {{ paddingLeft: '30px' }}>
-        <li key = {`skill ${index}`}>{skill}</li>
+      <div style= {{ paddingLeft: '30px' }} key = {`skill ${index}`}>
+        <li>{skill}</li>
       </div>
 
   return (
